@@ -433,9 +433,9 @@ class General(commands.Cog):
   @ignore_check()
   @commands.cooldown(1, 3, commands.BucketType.user)
   async def invite(self, ctx: commands.Context):
-    embed = discord.Embed(title="Axon X Invite & Support!",
+    embed = discord.Embed(title="ZYROX Invite & Support!",
       description=
-      f"> <:icons_plus:1328966531140288524> **[Axon X - Invite Bot](https://discord.com/oauth2/authorize?client_id=1313160406117646417&permissions=8&integration_type=0&scope=bot+applications.commands)**\n> <:icons_plus:1328966531140288524> **[Axon X - Support](https://discord.gg/codexdev)**",
+      f"> <:icons_plus:1328966531140288524> **[ZYROX - Invite Bot](https://discord.com/oauth2/authorize?client_id=1394293316316561498&permissions=8&integration_type=0&scope=bot)**\n> <:icons_plus:1328966531140288524> **[ZYROX - Support](https://discord.gg/aBF9fswWMs)**",
       color=0x0ba7ff)
 
     embed.set_footer(text=f"Requested by {ctx.author.name}",
@@ -444,11 +444,11 @@ class General(commands.Cog):
       label='Invite',
       style=discord.ButtonStyle.link,
       url=
-      'https://discord.com/oauth2/authorize?client_id=1313160406117646417&permissions=8&integration_type=0&scope=bot+applications.commands'
+      'https://discord.com/oauth2/authorize?client_id=1394293316316561498&permissions=8&integration_type=0&scope=bot'
     )
     support = Button(label='Support',
                     style=discord.ButtonStyle.link,
-                    url=f'https://discord.gg/codexdev')
+                    url=f'https://discord.gg/aBF9fswWMs')
     view = View()
     view.add_item(invite)
     view.add_item(support)
