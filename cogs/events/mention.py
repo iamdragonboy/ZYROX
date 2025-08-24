@@ -9,7 +9,7 @@ class Mention(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.color = 0x0095ff
-        self.bot_name = "Axon X"
+        self.bot_name = "ZYROX"
 
     async def is_blacklisted(self, message):
         async with aiosqlite.connect("db/block.db") as db:
@@ -55,9 +55,8 @@ class Mention(commands.Cog):
                 embed.set_footer(text="Powered by Axon Development™", icon_url=self.bot.user.avatar.url)
 
                 buttons = [
-                    discord.ui.Button(label="Invite", style=discord.ButtonStyle.link, url="https://discord.com/oauth2/authorize?client_id=1327994903048884288&permissions=8&integration_type=0&scope=bot+applications.commands"),
-                    discord.ui.Button(label="Web", style=discord.ButtonStyle.link, url="https://runx.news"),
-                    discord.ui.Button(label="Support", style=discord.ButtonStyle.link, url="https://discord.com/invite/codexdev"),
+                    discord.ui.Button(label="Invite", style=discord.ButtonStyle.link, url="https://discord.com/oauth2/authorize?client_id=1394293316316561498&permissions=8&integration_type=0&scope=bot"),
+                    discord.ui.Button(label="Support", style=discord.ButtonStyle.link, url="https://discord.gg/aBF9fswWMs"),
                 ]
 
                 view = discord.ui.View()
