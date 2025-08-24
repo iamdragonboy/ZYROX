@@ -1,4 +1,4 @@
-# Welcome to Axon X Code
+# Welcome to hi Code
 
 - Get Started
 -> Make sure the verison of py is 3.11
