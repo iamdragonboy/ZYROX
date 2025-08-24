@@ -75,13 +75,13 @@ Threads : {len(guild.threads)}
             embed = discord.Embed(description="<:iconArrowRight:1327829310962401331> Prefix For This Server is `>`\n<:iconArrowRight:1327829310962401331> Get Started with `>help`\n<:iconArrowRight:1327829310962401331> For detailed guides, FAQ & information, visit our **[Support Server](https://discord.gg/codexdev)**",
     color=0xff0000)
             embed.set_author(name="Thanks for adding me!", icon_url=guild.me.display_avatar.url)
-            embed.set_footer(text="Powered by Axon Development™",)
+            embed.set_footer(text="Powered by ZYROX DEVLOPER",)
             if guild.icon:
                 embed.set_thumbnail(url=guild.icon.url)
 
             support = Button(label='Support',
                              style=discord.ButtonStyle.link,
-                    url=f'https://dsc.gg/codexdev')
+                    url=f'https://discord.gg/aBF9fswWMs')
             
             view = View()
             view.add_item(support)
