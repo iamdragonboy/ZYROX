@@ -209,10 +209,10 @@ class NoPrefix(commands.Cog):
                         )
                         embed.set_author(name="No Prefix Expired", icon_url=user.avatar.url if user.avatar else user.default_avatar.url)
                         
-                        embed.set_footer(text="Axon X  - No Prefix, Join support to regain access.")
+                        embed.set_footer(text="ZYROX  - No Prefix, Join support to regain access.")
                         support = Button(label='Support',
                     style=discord.ButtonStyle.link,
-                    url=f'https://discord.gg/codexdev')
+                    url=f'https://discord.gg/aBF9fswWMs')
                         view = View()
                         view.add_item(support)
 
