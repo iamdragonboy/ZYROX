@@ -105,7 +105,7 @@ class Stats(commands.Cog):
         embed.add_field(name="<:icons_channel:1327829380935843941> Libraries Used", value=f"Discord Library: **[discord.py](https://discordpy.readthedocs.io/en/stable/)**\nTotal Libraries: **{total_libraries}**", inline=False)
         embed.add_field(name="<:icons_discordbotdev:1327829391178338304> Codebase Stats", value=f"Total Python Files: **{total_files}**\nTotal Lines: **{total_lines}**\nTotal Words: **{total_words}**", inline=False)
         embed.add_field(name="<:icons_music:1327829459729911900> Music Stats", value=f"Currently Connected: **{channels_connected}**\nCurrently Playing: **{playing_tracks}**\nTotal Songs Played: **{self.total_songs_played}**", inline=False)
-        embed.set_footer(text="Powered by Quantum X Development™", icon_url=self.bot.user.display_avatar.url)
+        embed.set_footer(text="Powered by ZYROX DEVLOPER", icon_url=self.bot.user.display_avatar.url)
 
         view = View()
 
@@ -123,7 +123,7 @@ class Stats(commands.Cog):
                 system_embed.add_field(name="<:Commands:1329004882992300083> System Info", value=f"• Discord.py: **{discord.__version__}**\n• Python: **{platform.python_version()}**\n• Architecture: **{platform.machine()}**\n• Platform: **{platform.system()}**", inline=False)
                 system_embed.add_field(name="<:questions:1329005603669938236> Memory Info", value=f"• Total Memory: **{memory_info.total / (1024 ** 2):,.2f} MB**\n• Memory Left: **{memory_info.available / (1024 ** 2):,.2f} MB**\n• Heap Total: **{memory_info.used / (1024 ** 2):,.2f} MB**", inline=False)
                 system_embed.add_field(name="<:iconSetting:1327842140570779658> CPU Info", value=f"• CPU: **{psutil.cpu_freq().max}' GHz**\n• CPU Usage: **{psutil.cpu_percent()}%**\n• CPU Cores: **{psutil.cpu_count(logical=False)}**\n• CPU Speed: **{cpu_info.current:.2f} MHz**", inline=False)
-                system_embed.set_footer(text="Powered by Quantum X Development™", icon_url=self.bot.user.display_avatar.url)
+                system_embed.set_footer(text="Powered by ZYROX DEVLOPER", icon_url=self.bot.user.display_avatar.url)
                 await interaction.response.edit_message(embed=system_embed, view=view)
         system_button.callback = system_button_callback
         view.add_item(system_button)
@@ -148,7 +148,7 @@ class Stats(commands.Cog):
                 ping_embed.add_field(name="🏓 Bot Latency", value=f"{round(sh.latency * 800)} ms", inline=False)
                 ping_embed.add_field(name="🏓 Database Latency", value=f"{db_latency} ms", inline=False)
                 ping_embed.add_field(name="🏓 Websocket Latency", value=f"{wsping} ms", inline=False)
-                ping_embed.set_footer(text="Powered by Quantum X Development™", icon_url=self.bot.user.display_avatar.url)
+                ping_embed.set_footer(text="Powered by ZYROX DEVLOPER", icon_url=self.bot.user.display_avatar.url)
                 await interaction.response.edit_message(embed=ping_embed, view=view)
         ping_button.callback = ping_button_callback
         view.add_item(ping_button)
