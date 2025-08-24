@@ -19,10 +19,10 @@ class Status(commands.Cog):
         embed = discord.Embed(title=f"{user.display_name}'s Status", color=0x000000)
 
         status_emoji = {
-            "online": "<:online:1329382084837507092> Online",
-            "idle": "<:idle:1329382255046430740> Idle",
-            "dnd": "<:dnd:1329382206921248808> Do Not Disturb",
-            "offline": "<:offline:1329382356804440107> Offline"
+            "online": "Online",
+            "idle": "Idle",
+            "dnd": "Do Not Disturb",
+            "offline": "Offline"
         }
 
         member = None
@@ -114,11 +114,11 @@ class Status(commands.Cog):
 
     def get_platform(self, member):
         if member.desktop_status != discord.Status.offline:
-            return "<:pc:1329382763161321524> Desktop"
+            return "Desktop"
         elif member.mobile_status != discord.Status.offline:
-            return "<:mobile:1329382816441569372> Mobile"
+            return "Mobile"
         elif member.web_status != discord.Status.offline:
-            return "<:browser:1329382931449516058> Browser"
+            return "Browser"
         return "Unknown"
 
     def get_custom_status(self, member):
